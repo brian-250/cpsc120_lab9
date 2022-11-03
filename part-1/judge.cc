@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
 
   if (arguments.size() < 4) {
     std::cout << "error: you must give at least three scores";
-    return -1;
+    return 1;
   }
 
   std::vector<double> scores{};
