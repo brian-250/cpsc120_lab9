@@ -17,8 +17,7 @@
 double JudgeAverage(const std::vector<double>& scores) {
   double min{scores.front()};
   double max{scores.front()};
-  double total{NAN};
-  
+  double total{};
   for (const double& score : scores) {
     if (score < min) {
       min = score;
@@ -27,8 +26,7 @@ double JudgeAverage(const std::vector<double>& scores) {
     }
     total += score;
   }
-  
-  return (((total - min) - max) / (scores.size() - 2));
+  return (((total - min) - max) / (static_cast<double>(scores.size()) - 2.0));
 }
 
 int main(int argc, char* argv[]) {
@@ -40,13 +38,13 @@ int main(int argc, char* argv[]) {
   }
 
   std::vector<double> scores{};
-  boolean is_first{true};
+  bool is_first{true};
   for (const std::string& argument : arguments) {
     if (is_first) {
       is_first = false;
       continue;
     }
-    scores.pushback(std::stod(argument));
+    scores.push_back(std::stod(argument));
   }
 
   double calculated_score{JudgeAverage(scores)};
