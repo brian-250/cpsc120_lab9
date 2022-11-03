@@ -7,7 +7,7 @@
 // Lab 09-02
 // Partners: @brian-250
 //
-// Program ...
+// returns whether a word is in the dictionary
 //
 
 #include <fstream>
