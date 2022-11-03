@@ -1,4 +1,14 @@
-// TODO: add a header
+// Grey Espinoza
+// CPSC 120-12
+// 2022-11-03
+// gray@csu.fullerton.edu
+// @CSUFgrey
+//
+// Lab 09-02
+// Partners: @brian-250
+//
+// Program ...
+//
 
 #include <fstream>
 #include <iostream>
