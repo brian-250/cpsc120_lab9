@@ -7,7 +7,7 @@
 // Lab 09-01
 // Partners: @brian-250
 //
-// Program ...
+// returns score using Olympic rules
 //
 
 #include <iostream>
